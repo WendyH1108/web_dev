@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Yingbing's test website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+
+    .header {
+      padding: 80px;
+      text-align: center;
+      background: rgb(140, 10, 10);
+      color: white;
+    }
+
+    .header h1 {
+      font-size: 40px;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    /* 右侧链接*/
+    .navbar a.right {
+      float: right;
+    }
+
+    /* 鼠标移动到链接的颜色 */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+
+    .side {
+      -ms-flex: 30%;
+      flex: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    .main {
+      -ms-flex: 70%;
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+    }
+
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>Yingbing(Wendy) Huang</h1>
+    <p>personal website</p>
+  </div>
+
+  <div class="navbar">
+    <a href="#">github</a>
+    <a href="#">publication</a>
+    <a href="#">Hobbies</a>
+    <a href="#" class="right">More</a>
+  </div>
+
+  <div class="row">
+    <div class="side">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:200px;">FAKE PHOTO</div>
+      <p>Hi I'm Yingbing(Wendy). This is my first website.</p>
+      <h3>More</h3>
+      <p>I learn this by myself for interests</p>
+      <div class="fakeimg" style="height:60px;">FAKE PHOTO ;)</div><br>
+      <div class="fakeimg" style="height:60px;">FAKE PHOTO :)</div><br>
+      <div class="fakeimg" style="height:60px;">FAKE PHOTO XD</div>
+    </div>
+    <div class="main">
+      <h2>Research</h2>
+      <h5>blah blah</h5>
+      <div class="fakeimg" style="height:200px;">FAKE PHOTO again</div>
+      <p>blah blah..</p>
+      <p>More blah blah...</p>
+      <br>
+      <h2>Professional Experience</h2>
+      <h5>blah blah</h5>
+      <div class="fakeimg" style="height:200px;">FAKE PHOTO again and again</div>
+      <p>blah blah..</p>
+      <p>More blah blah...</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>Contact Info</h2>
+  </div>
+
+</body>
+
+</html>
